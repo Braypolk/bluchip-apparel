@@ -1,71 +1,38 @@
-.embla {
-    overflow: hidden;
-}
-
-.embla__container {
-    display: flex;
-}
-
-.embla__slide {
-    flex: 0 0 100%;
-}
-
-.embla__viewport {
-    overflow: hidden;
+.swiper {
     width: 100%;
-}
-
-.embla__viewport.is-draggable {
-    cursor: move;
-    cursor: grab;
-}
-
-.embla__viewport.is-dragging {
-    cursor: grabbing;
-}
-
-.embla__container {
-    display: flex;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -webkit-tap-highlight-color: transparent;
-    /* margin-left: -10px; */
-}
-
-.embla__slide {
-    position: relative;
-    min-width: 100%;
-    /* padding-left: 10px; */
-}
-
-.embla__slide__inner {
-    position: relative;
-    overflow: hidden;
     height: 100vh;
 }
 
-.embla__slide__img {
-    position: absolute;
-    display: block;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    min-height: 100%;
+.swiper-slide {
+    /* background-size:cover; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; */
+}
+
+.swiper-slide img {
+    /* display: block;
+    width: 100%; */
+    /* flex-shrink: 0;
     min-width: 100%;
-    max-width: none;
-    transform: translate(-50%, -50%);
+    min-height: 100% */
+    object-fit: cover; /*todo: ie fallback*/
+    object-position: top;
+    width: 100%;
+    height: 100%;
 }
 
 .buttons {
     position: absolute;
     bottom: 15%;
     /* transform: translateY(-50%); */
-    left: 50%;
+    left: 40%;
     transform: translateX(-50%);
-    justify-content: center;
-    align-items: center;
-
+    z-index: 10;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .scrollTitle {
@@ -78,17 +45,41 @@
     align-items: center;
     font-size: 32px;
     color: white;
+    z-index: 10;
 }
 
-/* todo: box needs to be under */
-.scrollTitle:before, .buttons:before {
+#swiper-color .swiper-button-next, #swiper-color .swiper-button-prev {
+    color: white;
+    position: absolute;
+    top: 85%;
+    transform: translateX(-50%);
+}
+
+#swiper-color .swiper-button-next {
+    left: 52%;
+}
+
+#swiper-color .swiper-button-prev {
+    left: 48%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    font-size: 30px !important;
+}
+
+.scrollTitle:before,
+.buttons:before,
+.swiper-button-prev::before,
+.swiper-button-next::before {
     content: "";
     background: #000;
     width: 100%;
     height: 32px;
     display: block;
-    position:absolute;
+    position: absolute;
     bottom: -16px;
+    z-index: -1;
 }
 
 .embla__button {

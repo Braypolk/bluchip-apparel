@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "embla-carousel-autoplay": "^7.0.2",
-    "embla-carousel-react": "^7.0.2",
+    "@solana-mobile/wallet-adapter-mobile": "^0.9.0",
+    "@solana/wallet-adapter-base": "^0.9.16",
+    "@solana/wallet-adapter-react": "^0.15.18",
+    "@solana/wallet-adapter-react-ui": "^0.9.16",
+    "@solana/wallet-adapter-wallets": "^0.18.7",
+    "@solana/web3.js": "^1.56.2",
+    "axios": "^0.27.2",
     "next": "12.2.5",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "swiper": "^8.3.2"
   },
   "devDependencies": {
     "eslint": "8.23.0",

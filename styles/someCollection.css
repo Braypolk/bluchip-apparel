@@ -1,0 +1,7 @@
+.landing {
+    width: 100vw;
+    height: 90vh;
+    background-image: url('/assets/test1.png');
+    background-size:cover;
+    margin-bottom: 5vh;
+}
