@@ -101,6 +101,7 @@ const VerifiedCollection = () => {
             return (
               <div
                 className='imageBox'
+                key={key}
                 style={{
                   backgroundImage: `url(${img})`,
                   backgroundSize: 'cover'
@@ -131,8 +132,8 @@ const VerifiedCollection = () => {
             </div>
             {/* display nfts in wallet (no gifs) */}
             {nfts &&
-              nfts.map((object, i) => (
-                <div className='nftPreview'>
+              nfts.map((object, key) => (
+                <div className='nftPreview' key={key}>
                   {!object.imageUrl
                     .split('.')
                     .pop()
