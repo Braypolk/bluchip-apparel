@@ -6,7 +6,7 @@ export default function ItemGrid ({ imageList }) {
       {imageList.map((img, key) => {
         return (
           <div className='imageBox'>
-            <Image src={img} key={key} layout="fill"/>
+            <Image src={img} key={key} layout="responsive"/>
           </div>
         )
       })}

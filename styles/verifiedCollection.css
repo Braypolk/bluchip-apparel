@@ -1,0 +1,99 @@
+.hero {
+    height: 60vh;
+    position: relative;
+}
+
+.words {
+    width: 40vw;
+    margin: 0 auto;
+    padding-top: 20vh;
+    z-index: 99;
+    text-align: center;
+    font-size: 17px;
+}
+
+.words span {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.words h1 {
+    font-size: 54px;
+}
+
+.words h1::after {
+    content: "";
+    width: 2px;
+    height: 64px;
+    background: -webkit-linear-gradient(bottom, rgb(72, 72, 72), #b0b0b0);;
+    position: absolute;
+    transform: translateX(14px);
+}
+
+.lightWords {
+    font-size: 15px;
+    color: #7C7C7C;
+}
+
+.description {
+    margin-top: 30px;
+    background: black;
+    color: white;
+    padding: 30px;
+}
+
+.standing .product {
+    z-index: 1;
+}
+
+.standing {
+    position: absolute;
+    top: 50px;
+    left: 5vw;
+    height: 120vh;
+    width: auto;    
+}
+
+.standing > * {
+    height: 100%;
+}
+
+.product {
+    height: 50vh;
+    width: auto;
+    position: absolute;
+    right: 2vw;
+    top: 10vh;
+}
+
+.verifiedImages {
+    padding-top: 200px;
+    background-color: #E7E7E7;
+}
+
+.verifiedImages .itemGrid {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.verifiedImages .itemGrid .imageBox:nth-child(4) {
+    grid-column: span 2;
+}
+
+.walletButton {
+    position: absolute;
+    top: 60vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #7C7C7C !important;
+}
+
+/* .walletButton:hover {
+    background-color: black !important;
+}
+
+.wallet-adapter-dropdown-list {
+    right: unset;
+} */

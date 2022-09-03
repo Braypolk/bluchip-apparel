@@ -8,8 +8,5 @@
 .itemGrid .imageBox {
     background-color: #D9D9D9;
     height: 400px;
-}
-
-.itemGrid .imageBox:nth-child(4) {
-    grid-column: span 2;
+    position: relative;
 }
